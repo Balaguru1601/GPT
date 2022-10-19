@@ -1,0 +1,30 @@
+.customBtn {
+	background-color: #e63946 !important;
+	color: white !important;
+	font-weight: 400;
+	overflow: hidden;
+	border: 2px solid white;
+	position: relative;
+	left: 100%;
+	transform: translateX(-100%);
+}
+
+.imgBtn {
+	max-width: 50px;
+	max-height: 25px;
+	padding-right: 0.5rem;
+}
+
+.customBtn:hover {
+	color: #e63946 !important;
+	background-color: white !important;
+	transition: color 0.5s;
+	transition: background-color 0.5s;
+	border: 2px solid #e63946;
+}
+
+.customBtn:hover .imgBtn {
+	z-index: -5;
+	position: absolute;
+	/* transition: z-index 0.5s; */
+}

@@ -1,0 +1,31 @@
+.header {
+	background-color: rgba(165, 33, 44, 0.4);
+	display: flex;
+}
+
+.menubar {
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+}
+
+.menubar img {
+	max-width: 90%;
+	max-height: 90%;
+}
+
+@media (max-width: 1028px) {
+	.menubar {
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+@media (max-width: 640px) {
+	.menubar {
+		width: 95%;
+		margin-left: 2.5%;
+	}
+}

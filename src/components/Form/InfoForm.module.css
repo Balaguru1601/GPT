@@ -1,0 +1,19 @@
+.formControl {
+	position: fixed;
+	display: block !important;
+	width: 100% !important;
+	padding-bottom: 1rem !important;
+}
+
+.formBox {
+	border-radius: 5px;
+	padding: 1rem;
+	background-color: white;
+}
+
+.textArea::-webkit-input-placeholder {
+	color: #e63946;
+	font-size: large;
+	padding-left: 0.5rem;
+	padding-top: 0.5rem;
+}
