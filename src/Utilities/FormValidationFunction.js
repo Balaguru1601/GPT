@@ -2,7 +2,7 @@ export const validateText = (value, name = "") => {
 	if (!value.trim())
 		return {
 			validity: value.trim() !== "",
-			message: `${name} is required`,
+			message: `${name} is required!`,
 		};
 	return {
 		validity: value.trim() !== "",

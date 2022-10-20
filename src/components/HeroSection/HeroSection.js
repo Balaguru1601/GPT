@@ -1,8 +1,8 @@
-import classes from "./DigitalMarketing.module.css";
+import classes from "./HeroSection.module.css";
 import { Typography, Box, Grid } from "@mui/material";
 import InfoForm from "../Form/InfoForm";
 
-const DigitalMarketing = () => {
+const HeroSection = () => {
 	return (
 		<Grid container className={classes.digitalMarketing} spacing={2}>
 			<Grid item xs={12} md={6}>
@@ -33,4 +33,4 @@ const DigitalMarketing = () => {
 	);
 };
 
-export default DigitalMarketing;
+export default HeroSection;

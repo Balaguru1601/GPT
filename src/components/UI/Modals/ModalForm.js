@@ -1,21 +1,16 @@
-import CustomFormControl from "./CustomFormControl";
-import classes from "./InfoForm.module.css";
+import CustomFormControl from "../../Form/CustomFormControl";
+import classes from "./ModalForm.module.css";
 import {
 	validateEmail,
 	validateText,
 	validatePhNumber,
-} from "../../Utilities/FormValidationFunction";
-import useInput from "../../Hooks/use-input";
-import CustomButton from "../UI/CustomButton";
+} from "../../../Utilities/FormValidationFunction";
+import CustomButton from "../CustomButton";
+import useInput from "../../../Hooks/use-input";
+import { IconButton } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
-const InfoForm = () => {
-	const submitForm = (event) => {
-		event.preventDefault();
-		userField.validities.reset();
-		emailField.validities.reset();
-		phoneField.validities.reset();
-		messageField.validities.reset();
-	};
+const ModalForm = (props) => {
 	const userField = useInput(
 		{ type: "text", label: "Name", name: "username" },
 		validateText
@@ -51,9 +46,25 @@ const InfoForm = () => {
 		...messageField.properties,
 	};
 
+	const formIsValid =
+		userField.validities.isValid &&
+		emailField.validities.isValid &&
+		phoneField.validities.isValid &&
+		messageField.validities.isValid;
+
+	const submitForm = (event) => {
+		event.preventDefault();
+		userField.validities.reset();
+		emailField.validities.reset();
+		phoneField.validities.reset();
+		messageField.validities.reset();
+		props.closeModal();
+	};
+
 	const btnProps = {
 		onClick: submitForm,
 		type: "submit",
+		disabled: !formIsValid,
 	};
 
 	return (
@@ -90,4 +101,4 @@ const InfoForm = () => {
 	);
 };
 
-export default InfoForm;
+export default ModalForm;
