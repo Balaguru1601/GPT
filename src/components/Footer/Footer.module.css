@@ -1,0 +1,33 @@
+.footer {
+	padding: 5% 7%;
+	background-image: url("../../../public/assets/GPT-Footer-Background.png");
+	background-size: cover;
+	color: white;
+}
+
+.footerAnchor {
+	text-align: center;
+}
+
+.footerAnchor a {
+	position: relative;
+	text-decoration: none;
+	color: white;
+	font-size: large;
+	transition: border 500ms ease;
+	line-height: 1.5;
+}
+
+.footerAnchor:hover a::after {
+	content: " ";
+	height: 3px;
+	position: absolute;
+	bottom: -3px;
+	left: -1px;
+	width: 100%;
+	background-color: #ffe6e6;
+}
+
+.footer img {
+	max-width: 100%;
+}

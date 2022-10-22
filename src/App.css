@@ -12,9 +12,18 @@
 
 .mapboxgl-popup-content {
 	padding: 0;
+	border-radius: 7px;
+	overflow: hidden;
 }
 
 .mapboxgl-popup {
 	border-radius: 7px;
 	overflow: hidden;
+}
+
+#teamMap {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
 }

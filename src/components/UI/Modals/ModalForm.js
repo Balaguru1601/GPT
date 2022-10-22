@@ -7,8 +7,6 @@ import {
 } from "../../../Utilities/FormValidationFunction";
 import CustomButton from "../CustomButton";
 import useInput from "../../../Hooks/use-input";
-import { IconButton } from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
 
 const ModalForm = (props) => {
 	const userField = useInput(

@@ -4,7 +4,7 @@ import classes from "./Services.module.css";
 
 const Services = () => {
 	return (
-		<div className={classes.servicesWrapper}>
+		<div className={classes.servicesWrapper} id="services">
 			<Typography variant="h3" textAlign={"center"} color="white" pb={5}>
 				Our Services
 			</Typography>

@@ -27,7 +27,7 @@ const AboutUs = () => {
 		disabled: !emailField.validities.isValid,
 	};
 	return (
-		<Box className={classes.aboutUs}>
+		<Box className={classes.aboutUs} id="aboutUs">
 			<Typography
 				variant="h3"
 				pb={5}

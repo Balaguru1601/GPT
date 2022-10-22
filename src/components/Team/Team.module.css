@@ -1,7 +1,10 @@
 .ourTeam {
+	/* height: 600px; */
+	padding: 5% 7% !important;
 	width: 100%;
-	height: 500px;
-	margin-bottom: 100px;
+	background-image: url("../../../public/assets/light-bg.png");
+	background-size: cover;
+	color: #400d51;
 }
 
 .popupBox {
@@ -15,4 +18,8 @@
 	max-width: 150px;
 	max-height: 150px;
 	border-radius: 50%;
+}
+
+.teamMap {
+	min-height: 400px;
 }

@@ -4,7 +4,12 @@ import InfoForm from "../Form/InfoForm";
 
 const HeroSection = () => {
 	return (
-		<Grid container className={classes.digitalMarketing} spacing={2}>
+		<Grid
+			container
+			className={classes.digitalMarketing}
+			spacing={2}
+			pt={15}
+		>
 			<Grid item xs={12} md={6}>
 				<Typography variant="h3" fontWeight={"bold"} gutterBottom>
 					A digital revolution led by young women!

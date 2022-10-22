@@ -1,6 +1,7 @@
 .header {
-	background-color: rgba(165, 33, 44, 0.4);
+	background-color: rgba(0, 0, 0, 0.8);
 	display: flex;
+	padding-bottom: 1rem;
 }
 
 .menubar {

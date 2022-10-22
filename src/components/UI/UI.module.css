@@ -1,7 +1,8 @@
 .customBtn {
 	background-color: #e63946 !important;
 	color: white !important;
-	font-weight: 400;
+	font-weight: 600 !important;
+	font-size: 1.15rem !important;
 	overflow: hidden;
 	border: 2px solid white !important;
 	position: relative;
@@ -10,7 +11,8 @@
 .rightBtn {
 	background-color: #e63946 !important;
 	color: white !important;
-	font-weight: 400;
+	font-weight: 600 !important;
+	font-size: 1.2rem !important;
 	overflow: hidden;
 	border: 2px solid white !important;
 	position: relative;

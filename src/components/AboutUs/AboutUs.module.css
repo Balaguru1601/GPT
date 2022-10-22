@@ -17,3 +17,10 @@
 .subscribeBtn {
 	position: absolute;
 }
+
+@media (max-width: 650px) {
+	.newsLetter form {
+		width: 80%;
+		margin-left: 10%;
+	}
+}
