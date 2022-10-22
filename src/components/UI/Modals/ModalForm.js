@@ -52,17 +52,22 @@ const ModalForm = (props) => {
 
 	const submitForm = (event) => {
 		event.preventDefault();
-		userField.validities.reset();
-		emailField.validities.reset();
-		phoneField.validities.reset();
-		messageField.validities.reset();
-		props.closeModal();
+		if (formIsValid) {
+			userField.validities.reset();
+			emailField.validities.reset();
+			phoneField.validities.reset();
+			messageField.validities.reset();
+			return props.closeModal();
+		}
+		userField.validities.raiseError();
+		emailField.validities.raiseError();
+		phoneField.validities.raiseError();
+		messageField.validities.raiseError();
 	};
 
 	const btnProps = {
 		onClick: submitForm,
 		type: "submit",
-		disabled: !formIsValid,
 	};
 
 	return (

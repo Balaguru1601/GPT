@@ -10,7 +10,7 @@ export const data = [
 			"Creative Campaigns",
 		],
 		description:
-			"The one stop solution for promotion and rapid growth of business with a highly integrated,young digital marketing teams.",
+			"One stop solution for promotion and rapid growth of business with highly integrated,young marketing teams.",
 	},
 	{
 		title: "Business consultation",
@@ -32,9 +32,9 @@ export const data = [
 		description:
 			"A highly adept service that offers technical tools and information for smooth efficient operational processes.",
 		list: [
-			"Software development, integration and maintenance",
+			"Software development, integration",
 			"Networking integration and management",
-			"Information security",
+			"Testing and maintanance",
 			"Mobile services",
 			"Web applications",
 			"Troubleshooting and technical support",

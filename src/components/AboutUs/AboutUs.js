@@ -18,13 +18,13 @@ const AboutUs = () => {
 
 	const submitForm = (event) => {
 		event.preventDefault();
-		emailField.validities.reset();
+		if (emailField.validities.isValid) return emailField.validities.reset();
+		return emailField.validities.raiseError();
 	};
 
 	const btnProps = {
 		onClick: submitForm,
 		type: "submit",
-		disabled: !emailField.validities.isValid,
 	};
 	return (
 		<Box className={classes.aboutUs} id="aboutUs">

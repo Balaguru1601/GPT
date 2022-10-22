@@ -1,15 +1,15 @@
 import HeroSection from "./HeroSection/HeroSection";
 import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
 import classes from "./Home.module.css";
 import Services from "./Services/Services";
 import AboutUs from "./AboutUs/AboutUs";
 import OurTeam from "./Team/OurTeam";
+import Navbar from "./UI/Navbar/Navbar";
 
 const Home = () => {
 	return (
 		<div className={classes.home}>
-			<Header />
+			<Navbar />
 			<HeroSection />
 			<Services />
 			<AboutUs />

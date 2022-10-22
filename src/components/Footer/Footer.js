@@ -45,6 +45,13 @@ const Footer = () => {
 					className={classes.footerAnchor}
 					py={1}
 				>
+					<a href="#services">Services</a>
+				</Typography>
+				<Typography
+					variant="body1"
+					className={classes.footerAnchor}
+					py={1}
+				>
 					<a href="https://girlpowertalk.com/blog/" target="new">
 						Blog
 					</a>

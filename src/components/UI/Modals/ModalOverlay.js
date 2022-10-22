@@ -8,7 +8,12 @@ const ModalOverlay = (props) => {
 		const dataItem = props.data;
 
 		const list = dataItem.list.map((item, index) => (
-			<Typography variant="h6" py={1}>
+			<Typography
+				key={index}
+				variant="body1"
+				sx={{ fontSize: "large" }}
+				py={1}
+			>
 				{item}
 			</Typography>
 		));

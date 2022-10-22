@@ -9,13 +9,6 @@ import useInput from "../../Hooks/use-input";
 import CustomButton from "../UI/CustomButton";
 
 const InfoForm = () => {
-	const submitForm = (event) => {
-		event.preventDefault();
-		userField.validities.reset();
-		emailField.validities.reset();
-		phoneField.validities.reset();
-		messageField.validities.reset();
-	};
 	const userField = useInput(
 		{ type: "text", label: "Name", name: "username" },
 		validateText
@@ -51,16 +44,29 @@ const InfoForm = () => {
 		...messageField.properties,
 	};
 
-	const fromIsValid =
+	const formIsValid =
 		userField.validities.isValid &&
 		emailField.validities.isValid &&
 		phoneField.validities.isValid &&
 		messageField.validities.isValid;
 
+	const submitForm = (event) => {
+		event.preventDefault();
+		if (formIsValid) {
+			userField.validities.reset();
+			emailField.validities.reset();
+			phoneField.validities.reset();
+			return messageField.validities.reset();
+		}
+		userField.validities.raiseError();
+		emailField.validities.raiseError();
+		phoneField.validities.raiseError();
+		return messageField.validities.raiseError();
+	};
+
 	const btnProps = {
 		onClick: submitForm,
 		type: "submit",
-		disabled: !fromIsValid,
 	};
 
 	return (
