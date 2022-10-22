@@ -1,5 +1,13 @@
 .digitalMarketing {
-	background-color: #e63946;
-	color: rgb(255, 238, 243);
+	/* background-color: #e63946; */
+	/* color: rgb(255, 238, 243); */
 	padding: 3rem 7%;
+	/* background: linear-gradient(91.09deg, #e63946 0.18%, #af1f2a 99.85%),
+		#eb9898;
+	mix-blend-mode: normal; */
+	/* background-image: url("../../../public/assets/GPT-Footer-Background.png");
+	background-size: cover; */
+	/* background-color: #eb1d36; */
+	background: linear-gradient(#ff5d5d, #eb4747, #eb1d36);
+	color: #ffffff;
 }

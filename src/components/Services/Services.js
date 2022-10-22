@@ -1,13 +1,16 @@
-import { Grid } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import ServiceCard from "../UI/Cards/ServiceCard";
 import classes from "./Services.module.css";
 
 const Services = () => {
 	return (
 		<div className={classes.servicesWrapper}>
+			<Typography variant="h3" textAlign={"center"} color="white" pb={5}>
+				Our Services
+			</Typography>
 			<Grid
 				container
-				spacing={{ xs: 2, sm: 3, md: 5, lg: 8 }}
+				spacing={{ xs: 2, sm: 3, md: 4, lg: 8 }}
 				justifyContent="center"
 				alignItems="center"
 			>

@@ -24,7 +24,8 @@
 	padding-right: 0.5rem;
 }
 
-.customBtn:hover {
+.customBtn:hover,
+.rightBtn:hover {
 	color: #e63946 !important;
 	background-color: white !important;
 	transition: color 0.5s;

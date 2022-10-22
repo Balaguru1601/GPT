@@ -8,7 +8,7 @@ const CustomButton = (props) => {
 			{...props.btnProps}
 			className={props.right ? classes.rightBtn : classes.customBtn}
 			variant="contained"
-			endIcon={<CompareArrowsIcon fontSize="large" />}
+			endIcon={props.imgBtn && <CompareArrowsIcon fontSize="large" />}
 			sx={{}}
 		>
 			{props.label}

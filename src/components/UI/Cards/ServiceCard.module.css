@@ -18,17 +18,24 @@
 	display: flex;
 	align-items: flex-end;
 	height: 100%;
-	background-color: rgba(165, 33, 44, 0.7);
+	background-color: rgba(0, 0, 0, 0);
 	border-radius: 0.7rem;
 	position: relative;
 	color: white;
 	z-index: 5;
+	transition: background-color 500ms ease;
 }
 
 .serviceCardContent {
 	/* transform: translateY(65%);
 	transition: transform 500ms ease; */
 	max-width: 100%;
+	color: white;
+	background: linear-gradient(
+		rgba(165, 33, 44, 0),
+		rgba(165, 33, 44, 0.7) 20%,
+		rgba(165, 33, 44, 1)
+	);
 }
 
 .serviceCardContent .cardTitle {
@@ -36,20 +43,26 @@
 	position: relative;
 	width: max-content;
 	max-width: 100%;
+	font-weight: bold;
 }
 
 .serviceCardContent .cardContent {
 	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 
 .serviceCardContent .cardTitle::after {
 	content: " ";
 	height: 3px;
-	background-color: #e63946;
+	background-color: red;
 	position: absolute;
 	bottom: 0;
 	left: -1rem;
 	width: calc(100% + 1rem);
+}
+
+.serviceCard:hover {
+	background-color: rgba(165, 33, 44, 0.3);
 }
 
 .serviceCard:hover .serviceCardContent {
@@ -58,7 +71,7 @@
 
 @media (hover) {
 	.serviceCardContent {
-		transform: translateY(65%);
+		transform: translateY(72%);
 		transition: transform 500ms ease;
 	}
 }

@@ -51,9 +51,16 @@ const InfoForm = () => {
 		...messageField.properties,
 	};
 
+	const fromIsValid =
+		userField.validities.isValid &&
+		emailField.validities.isValid &&
+		phoneField.validities.isValid &&
+		messageField.validities.isValid;
+
 	const btnProps = {
 		onClick: submitForm,
 		type: "submit",
+		disabled: !fromIsValid,
 	};
 
 	return (

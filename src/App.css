@@ -1,0 +1,20 @@
+/* .mapboxgl-canvas {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1000px;
+	height: 500px;
+} */
+
+.mapboxgl-popup-close-button {
+	font-size: large !important;
+}
+
+.mapboxgl-popup-content {
+	padding: 0;
+}
+
+.mapboxgl-popup {
+	border-radius: 7px;
+	overflow: hidden;
+}

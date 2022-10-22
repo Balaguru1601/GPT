@@ -24,7 +24,7 @@ export const data = [
 			"Training staff and management",
 		],
 		description:
-			"A structured service to address a company's end-to-end business needs helping you to adapt market dynamics and compete.",
+			"A structured service to address a company's end-to-end business needs helping you to adapt market dynamics",
 	},
 	{
 		title: "Tech services",

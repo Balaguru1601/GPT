@@ -1,0 +1,18 @@
+.ourTeam {
+	width: 100%;
+	height: 500px;
+	margin-bottom: 100px;
+}
+
+.popupBox {
+	text-align: center;
+	padding: 1rem;
+	background-color: #ffe6e6;
+	color: #e63946;
+}
+
+.popupBox img {
+	max-width: 150px;
+	max-height: 150px;
+	border-radius: 50%;
+}

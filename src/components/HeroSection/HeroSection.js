@@ -1,23 +1,15 @@
 import classes from "./HeroSection.module.css";
-import { Typography, Box, Grid } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import InfoForm from "../Form/InfoForm";
 
 const HeroSection = () => {
 	return (
 		<Grid container className={classes.digitalMarketing} spacing={2}>
 			<Grid item xs={12} md={6}>
-				{/* <Typography variant="h3" gutterBottom>
-					The best marketing doesn't feel like marketing!
-				</Typography>
-				<Typography variant="h6" gutterBottom>
-					The one stop solution for promotion and rapid growth of
-					business with a highly integrated,young digital marketing
-					teams.
-				</Typography> */}
-				<Typography variant="h3" gutterBottom>
+				<Typography variant="h3" fontWeight={"bold"} gutterBottom>
 					A digital revolution led by young women!
 				</Typography>
-				<Typography variant="h6" gutterBottom>
+				<Typography variant="h6" color={"white"} gutterBottom>
 					Girl Power Talk is passionate about elevating young women to
 					become global leaders who are recognized for their myriad of
 					talents and contributions.At Girl Power Talk, we are

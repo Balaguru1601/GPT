@@ -25,7 +25,7 @@ const ServiceCard = (props) => {
 			<Card className={classes.serviceCard}>
 				<CardContent className={classes.serviceCardContent}>
 					<Typography
-						variant="h4"
+						variant="h5"
 						gutterBottom
 						className={classes.cardTitle}
 					>
@@ -38,7 +38,11 @@ const ServiceCard = (props) => {
 					>
 						{dataItem.description}
 					</Typography>
-					<CustomButton label="Know more" btnProps={btnProps} />
+					<CustomButton
+						label="Know more"
+						btnProps={btnProps}
+						imgBtn
+					/>
 					{showModal && (
 						<Modal
 							data={dataItem}

@@ -1,27 +1,15 @@
 import classes from "./ModalOverlay.module.css";
-import {
-	Box,
-	IconButton,
-	Typography,
-	ListItem,
-	ListItemText,
-	ListItemIcon,
-	List,
-} from "@mui/material";
+import { Box, IconButton, Typography, List } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
-import TripOriginIcon from "@mui/icons-material/TripOrigin";
 import ModalForm from "./ModalForm";
 
 const ModalOverlay = (props) => {
 	const dataItem = props.data;
 
 	const list = dataItem.list.map((item, index) => (
-		<ListItem key={index}>
-			<ListItemIcon sx={{ color: "white" }}>
-				<TripOriginIcon />
-			</ListItemIcon>
-			<ListItemText primary={item} />
-		</ListItem>
+		<Typography variant="h6" py={1}>
+			{item}
+		</Typography>
 	));
 
 	return (
@@ -31,7 +19,12 @@ const ModalOverlay = (props) => {
 			</IconButton>
 			<div className={classes.modalContent}>
 				<Box className={classes.serviceBox}>
-					<Typography variant="h4" gutterBottom textAlign={"center"}>
+					<Typography
+						variant="h4"
+						fontWeight={700}
+						gutterBottom
+						textAlign={"center"}
+					>
 						{dataItem.title}
 					</Typography>
 					<List>{list}</List>
