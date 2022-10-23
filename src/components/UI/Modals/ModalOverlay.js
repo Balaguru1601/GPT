@@ -12,6 +12,7 @@ const ModalOverlay = (props) => {
 				key={index}
 				variant="body1"
 				sx={{ fontSize: "large" }}
+				color={"#3c3939"}
 				py={1}
 			>
 				{item}

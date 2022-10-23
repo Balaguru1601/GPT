@@ -50,11 +50,15 @@ const AboutUs = () => {
 					alignItems="center"
 				>
 					<img
-						src="/assets/Rachita-Sharma.png"
+						src="/assets/Rachita-sharma.png"
 						alt="Co-founder"
 						className={classes.founderImg}
 					/>
-					<Typography variant="h6" textAlign={"center"}>
+					<Typography
+						variant="h6"
+						textAlign={"center"}
+						color={"#3c3939"}
+					>
 						Co-Founder,Girl Power Talk
 					</Typography>
 					<Typography variant="h6" textAlign={"center"}>
@@ -62,16 +66,23 @@ const AboutUs = () => {
 					</Typography>
 				</Grid>
 				<Grid item md={8}>
-					<Typography variant="h5" pb={3}>
-						Girl Power Talk is an amalgamation of cultures where
-						profit meets purpose. Our team is determined to make the
-						world a better place for people regardless of their
-						locale and social strata. Through our nurturing culture
-						of learning and mentorship, we instill young people with
-						exceptional soft-skills, technical knowledge, and
-						purpose in life.
+					<Typography variant="h6" pb={3}>
+						<Typography
+							variant="h6"
+							fontWeight={700}
+							component={"span"}
+							color={"#3c3939"}
+						>
+							Girl Power Talk
+						</Typography>{" "}
+						is an amalgamation of cultures where profit meets
+						purpose. Our team is determined to make the world a
+						better place for people regardless of their locale and
+						social strata. Through our nurturing culture of learning
+						and mentorship, we instill young people with exceptional
+						soft-skills, technical knowledge, and purpose in life.
 					</Typography>
-					<Typography variant="h5" pb={3}>
+					<Typography variant="h6" pb={3} color={"#3c3939"}>
 						Our mission is to drive impact through our ever-growing
 						team of global leaders. We are relentlessly committed to
 						education, inclusion and diversity, gender equality, and

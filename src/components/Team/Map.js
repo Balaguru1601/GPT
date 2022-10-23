@@ -1,17 +1,8 @@
 import { useState, useRef } from "react";
-import Map, {
-	Marker,
-	NavigationControl,
-	FullscreenControl,
-	ScaleControl,
-	GeolocateControl,
-	MapProvider,
-} from "react-map-gl";
+import Map, { Marker, NavigationControl, ScaleControl } from "react-map-gl";
 import { userData } from "../../Utilities/UserData";
-import ControlPanel from "./ControlPanel";
 import Pin from "./Pin";
 import MapPopup from "./MapPopup";
-
 import classes from "./Team.module.css";
 
 const TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
